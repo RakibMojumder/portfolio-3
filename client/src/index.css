@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .vertical-text {
+        writing-mode: vertical-rl;
+        transform: rotate(-180deg);
+        text-align: center;
+        word-spacing: 2px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+.purple-scroll::-webkit-scrollbar-thumb {
+    background: #965CF0;
+    border-radius: 10px;
+}
+
+.green-scroll::-webkit-scrollbar-thumb {
+    background: #10B981;
+    border-radius: 10px;
+}
