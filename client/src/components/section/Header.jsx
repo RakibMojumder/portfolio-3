@@ -31,6 +31,7 @@ const Header = () => {
     >
       <div>
         <div className="text-white text-center space-y-3">
+          <span className="bg-[#293959]"></span>
           <div className="text-xl md:text-4xl lg:text-6xl font-light">
             <motion.div
               initial="hidden"

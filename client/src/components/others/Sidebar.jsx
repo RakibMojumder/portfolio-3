@@ -1,6 +1,5 @@
 import { navItems } from "../../utils/data";
 import { useState } from "react";
-import { useTheme } from "../../provider/ThemeProvider";
 import ThemeSwitcher from "./ThemeSwitcher";
 import { AiFillFileImage } from "react-icons/ai";
 import SectionItem from "./SectionItem";
@@ -12,7 +11,6 @@ import useScroll from "../../hooks/useScroll";
 const Sidebar = ({ containerRef }) => {
   const [activeSection, setActiveSection] = useState("home");
   const scrollPosition = useScroll(containerRef);
-  const { theme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,9 +44,8 @@ const Sidebar = ({ containerRef }) => {
 
   return (
     <div
-      className={`${
-        theme ? "green-scroll" : "purple-scroll"
-      } hidden sm:block h-full sm:min-w-[26%] md:min-w-[210px] xl:max-w-[17%] border-r border-teal-800 dark:border-slate-700 pt-5 pb-12 overflow-y-auto`}
+      id="sidebar"
+      className={`hidden sm:block h-full sm:min-w-[26%] md:min-w-[210px] xl:max-w-[17%] border-r border-emerald-500/10 dark:border-slate-600 pt-5 pb-12 overflow-y-auto`}
     >
       <Profile />
       <div className="mt-4">

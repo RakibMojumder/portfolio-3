@@ -17,6 +17,10 @@
     width: 4px;
 }
 
+#sidebar::-webkit-scrollbar {
+    display: none;
+}
+
 .purple-scroll::-webkit-scrollbar-thumb {
     background: #965CF0;
     border-radius: 10px;

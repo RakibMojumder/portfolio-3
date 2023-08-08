@@ -12,7 +12,7 @@ const Others = () => {
     <div
       className={`${
         theme ? "green-scroll" : "purple-scroll"
-      } hidden sm:block h-full sm:min-w-[26%] md:min-w-[210px] xl:max-w-[17%] border border-teal-800 dark:border-slate-700 pt-5 pb-12 overflow-y-auto`}
+      } hidden sm:block h-full sm:min-w-[26%] md:min-w-[210px] xl:max-w-[17%] border-r border-emerald-500/10 dark:border-slate-700 pt-5 pb-12 overflow-y-auto`}
     >
       <Profile />
       <div className="mt-10">

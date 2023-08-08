@@ -28,7 +28,7 @@ const ProjectDetails = ({ project, handleOpen }) => {
           scale: 1,
           transition: { duration: 0.8, type: "spring" },
         }}
-        className="h-[90vh] md:h-[80vh] w-[95%] lg:w-3/4 bg-emerald-100/20 dark:bg-purple-300/20 backdrop-blur-2xl rounded-md overflow-y-auto"
+        className="h-[90vh] md:h-[80vh] w-[95%] lg:w-3/4 bg-emerald-100/5 dark:bg-purple-200/10 backdrop-blur-3xl rounded-md overflow-y-auto"
       >
         <button
           onClick={handleOpen}

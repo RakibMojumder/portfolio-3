@@ -14,7 +14,7 @@ const Navbar = ({ handleOpen }) => {
         transition: { duration: 0.3, ease: "easeOut", type: "spring" },
       }}
       exit={{ opacity: 0, scale: 0.5 }}
-      className="min-w-[92%] h-[90vh] bg-gray-600/60 backdrop-blur-xl py-6 px-3 sm:hidden overflow-y-auto z-50 fixed top-16 left-1/2 -translate-x-1/2 text-white rounded-md"
+      className="min-w-[92%] h-[87vh] bg-gray-600/60 backdrop-blur-xl py-6 px-3 sm:hidden overflow-y-auto z-50 fixed top-16 left-1/2 -translate-x-1/2 text-white rounded-md"
     >
       <div className="pb-4 border-b">
         <img
