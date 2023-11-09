@@ -3,12 +3,31 @@ import { RxCross1 } from "react-icons/rx";
 import { IoServer } from "react-icons/io5";
 import { HiCheckCircle, HiOutlineLink } from "react-icons/hi";
 import { AiFillGithub } from "react-icons/ai";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Image from "./Image";
+import { useEffect } from "react";
+import { useTheme } from "../../provider/ThemeProvider";
 
 const ProjectDetails = ({ project, handleOpen }) => {
-  const [imageSource, setImageSource] = useState(project.image[0]);
+  const ref = useRef();
+  const { theme } = useTheme();
   const [activeIndex, setActiveIndex] = useState(null);
+  const [imageSource, setImageSource] = useState(project.image[0]);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (!ref.current.contains(e.target)) {
+        console.log("object");
+        handleOpen();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [handleOpen]);
 
   const changeImageSource = (index) => {
     setImageSource(project.image[index]);
@@ -18,27 +37,31 @@ const ProjectDetails = ({ project, handleOpen }) => {
   return (
     <motion.div
       key={project._Id}
-      exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.2 } }}
+      exit={{ opacity: 0, transition: { duration: 0.3 } }}
       className="fixed inset-0 bg-black/50 flex justify-center items-center z-50"
     >
       <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
+        ref={ref}
+        initial={{ opacity: 0, y: 50 }}
         whileInView={{
           opacity: 1,
-          scale: 1,
-          transition: { duration: 0.8, type: "spring" },
+          y: 0,
+          transition: { duration: 0.3 },
         }}
-        className="h-[90vh] md:h-[80vh] w-[95%] lg:w-3/4 bg-emerald-100/5 dark:bg-purple-200/10 backdrop-blur-3xl rounded-md overflow-y-auto"
+        exit={{ opacity: 0, y: 50, transition: { duration: 0.3 } }}
+        className={`h-[90vh] md:h-[80vh] w-[95%] lg:w-1/2 bg-emerald-100/[0.03] dark:bg-purple-200/10 backdrop-blur-2xl rounded-md overflow-y-auto relative ${
+          theme ? "green-scroll" : "purple-scroll"
+        }`}
       >
         <button
           onClick={handleOpen}
-          className="md:h-10 h-8 md:w-10 w-8 bg-emerald-500 dark:bg-purple-500 flex justify-center items-center text-white rounded-full fixed top-3 right-3"
+          className="md:h-10 h-8 md:w-10 w-8 bg-emerald-500 dark:bg-purple-500 flex md:hidden justify-center items-center text-white rounded-full fixed top-1 right-1"
         >
           <RxCross1 size={20} />
         </button>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-20 md:gap-10 text-gray-200 p-5 mt-10">
+        <div className="grid grid-cols-1 gap-y-20 md:gap-10 text-gray-200 p-5 md:p-10">
           <div>
-            <Image src={imageSource} height={320} alt="project Image" />
+            <Image src={imageSource} height={350} alt="project Image" />
             <div className="flex justify-center gap-4 mt-4">
               {project.image.map((src, index) => (
                 <button
@@ -70,7 +93,7 @@ const ProjectDetails = ({ project, handleOpen }) => {
 
             {/* SOURCE CODE */}
             <div className="mt-8">
-              <h3 className="text-lg">Source Code</h3>
+              <h3 className="text-xl">Source Code</h3>
               <div className="flex flex-wrap gap-3 mt-2 text-sm">
                 <div className="inline-flex">
                   <a
@@ -110,12 +133,12 @@ const ProjectDetails = ({ project, handleOpen }) => {
 
             {/* FEATURES */}
             <div className="mt-8">
-              <h3 className="text-lg">Features</h3>
+              <h3 className="text-xl">Features</h3>
               <div className="space-y-3 mt-2">
                 {project.features.map((feature, index) => (
-                  <div key={index} className="flex gap-3 items-start">
+                  <div key={index} className="flex gap-3 items-start text-sm">
                     <HiCheckCircle className="flex-shrink-0 text-xl dark:text-primary text-emerald-500" />
-                    <p className="text-xs">{feature}</p>
+                    <p>{feature}</p>
                   </div>
                 ))}
               </div>
@@ -123,8 +146,8 @@ const ProjectDetails = ({ project, handleOpen }) => {
 
             {/* TECHNOLOGY */}
             <div className="mt-8">
-              <h3 className="text-lg">Technology</h3>
-              <div className="flex flex-wrap gap-2 mt-2 text-xs">
+              <h3 className="text-xl">Technology</h3>
+              <div className="flex flex-wrap gap-2 mt-2 text-sm">
                 {project.technology.map((tech, index) => (
                   <span
                     key={index}

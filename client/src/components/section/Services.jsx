@@ -2,6 +2,7 @@ import rec from "../../assets/rec2.png";
 import { motion } from "framer-motion";
 import { WebDev } from "../../utils/icons";
 import { Bug, Responsive } from "../../utils/icons";
+import Title from "../others/Title";
 
 const Services = () => {
   return (
@@ -9,7 +10,8 @@ const Services = () => {
       id="services"
       className="min-h-full w-full mb-32 overflow-hidden hidden lg:block"
     >
-      <motion.h1
+      <Title labelOne={"Services"} labelTwo={"What i do"} />
+      {/* <motion.h1
         initial={{ x: -300, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
@@ -22,7 +24,7 @@ const Services = () => {
         className="text-center font-extrabold text-5xl uppercase text-neutral-200 pt-4 mb-14"
       >
         My <span className="text-emerald-500 dark:text-primary">Services</span>
-      </motion.h1>
+      </motion.h1> */}
       <div className="relative px-5">
         <div className="flex flex-col items-center gap-y-80">
           <motion.div

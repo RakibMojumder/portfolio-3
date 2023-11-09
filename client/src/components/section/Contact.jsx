@@ -3,6 +3,7 @@ import contactOne from "../../assets/lottie-icons/contact-1.json";
 import Lottie from "lottie-react";
 import { motion } from "framer-motion";
 import { useTheme } from "../../provider/ThemeProvider";
+import Title from "../others/Title";
 
 const Contact = () => {
   const { theme } = useTheme();
@@ -18,7 +19,8 @@ const Contact = () => {
       className="min-h-full flex justify-center items-center pt-10 sm:p-4 px-3 sm:px-0 overflow-x-hidden"
     >
       <div>
-        <motion.h1
+        <Title labelOne={"Contact"} labelTwo={"With me"} />
+        {/* <motion.h1
           initial={{ x: 300 }}
           whileInView={{ x: 0 }}
           viewport={{ once: true }}
@@ -31,7 +33,7 @@ const Contact = () => {
           className="text-center font-extrabold text-4xl sm:text-5xl uppercase text-neutral-200 mb-10 pt-4"
         >
           <span className="text-emerald-500 dark:text-primary">Contact</span> me
-        </motion.h1>
+        </motion.h1> */}
         <div className="grid grid-cols-12 items-center">
           <div className="col-span-6 hidden lg:block">
             <Lottie animationData={theme ? contactOne : contact} />

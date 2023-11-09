@@ -5,7 +5,7 @@ import Image from "./Image";
 
 const Profile = () => {
   return (
-    <div className="pb-6 border-b border-emerald-500/10 dark:border-slate-600">
+    <div className="pb-6 border-b border-emerald-500/10 dark:border-slate-700">
       <Image
         src={myImage}
         width={112}

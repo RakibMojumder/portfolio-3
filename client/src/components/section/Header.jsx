@@ -50,7 +50,7 @@ const Header = () => {
                   </motion.span>
                 ))}
               </h3>
-              <h1 className="text-4xl md:text-5xl lg:text-7xl text-emerald-500 dark:text-primary font-extrabold uppercase">
+              <h1 className="text-4xl md:text-5xl lg:text-7xl text-emerald-500 dark:text-primary font-extrabold uppercase font-PlaypenSans my-3">
                 {lineTwo.split("").map((char, index) => (
                   <motion.span
                     key={char + "-" + index}

@@ -2,6 +2,7 @@ import { navItems } from "../../utils/data";
 import { useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import { AiFillFileImage } from "react-icons/ai";
+import { FaFileSignature } from "react-icons/fa";
 import SectionItem from "./SectionItem";
 import Profile from "./Profile";
 import NavItem from "./NavItem";
@@ -45,7 +46,7 @@ const Sidebar = ({ containerRef }) => {
   return (
     <div
       id="sidebar"
-      className={`hidden sm:block h-full sm:min-w-[26%] md:min-w-[210px] xl:max-w-[17%] border-r border-emerald-500/10 dark:border-slate-600 pt-5 pb-12 overflow-y-auto`}
+      className={`hidden sm:block h-full sm:min-w-[26%] md:min-w-[210px] xl:max-w-[17%] border-r border-emerald-500/10 dark:border-slate-700 pt-5 pb-12 overflow-y-auto`}
     >
       <Profile />
       <div className="mt-4">
@@ -75,7 +76,7 @@ const Sidebar = ({ containerRef }) => {
             label="Resume"
             icon={AiFillFileImage}
           />
-          <NavItem href="/others/blog" label="Blog" icon={AiFillFileImage} />
+          <NavItem href="/others/blog" label="Blog" icon={FaFileSignature} />
           <ThemeSwitcher />
         </ul>
       </div>

@@ -3,6 +3,7 @@ import developerOne from "../../assets/lottie-icons/Developer-1.json";
 import Lottie from "lottie-react";
 import { motion } from "framer-motion";
 import { useTheme } from "../../provider/ThemeProvider";
+import Title from "../others/Title";
 
 const About = () => {
   const { theme } = useTheme();
@@ -13,7 +14,8 @@ const About = () => {
       className="min-h-full flex items-center mb-20 sm:mb-0 pt-20 sm:pt-0 overflow-x-hidden"
     >
       <div>
-        <motion.h1
+        <Title labelOne={"About"} labelTwo={"Myself"} />
+        {/* <motion.h1
           initial={{ x: 300 }}
           whileInView={{ x: 0 }}
           viewport={{ once: true }}
@@ -26,7 +28,7 @@ const About = () => {
           className="text-center font-extrabold text-4xl sm:text-5xl uppercase text-neutral-200 pt-4"
         >
           <span className="text-emerald-500 dark:text-primary">About</span> me
-        </motion.h1>
+        </motion.h1> */}
         <div className="grid grid-cols-12 items-center w-full px-3 lg:pr-5">
           <div className="col-span-12 lg:col-span-5">
             <Lottie animationData={theme ? developerOne : developer} />

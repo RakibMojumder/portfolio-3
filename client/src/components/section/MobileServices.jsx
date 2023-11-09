@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 import { Bug, Responsive, WebDev } from "../../utils/icons";
+import Title from "../others/Title";
 
 const MobileServices = () => {
   return (
     <div id="service" className="lg:hidden mb-14">
-      <motion.h1
+      <Title labelOne={"Services"} labelTwo={"What i do"} />
+      {/* <motion.h1
         initial={{ x: -300, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
@@ -17,7 +19,7 @@ const MobileServices = () => {
         className="text-center font-extrabold text-4xl sm:text-5xl uppercase text-neutral-200 pt-20 sm:pt-4 mb-14"
       >
         My <span className="text-emerald-500 dark:text-primary">Services</span>
-      </motion.h1>
+      </motion.h1> */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 px-5">
         <motion.div className="bg-emerald-200/5 dark:bg-purple-200/10 p-3 text-center rounded-md z-30 overflow-hidden relative before:absolute before:top-0 before:left-0 before:h-20 before:w-20 before:bg-emerald-500 dark:before:bg-primary before:rounded-br-full before:-z-10 before:duration-500 hover:before:w-[150%] hover:before:h-[150%]">
           <div className="flex items-start gap-8">

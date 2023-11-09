@@ -15,7 +15,8 @@ export default {
       },
       fontFamily: {
         montserrat: ['Montserrat'],
-        inter: ['Inter']
+        inter: ['Inter'],
+        PlaypenSans: ['Playpen Sans']
       }
     },
   },
