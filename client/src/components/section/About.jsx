@@ -33,23 +33,31 @@ const About = () => {
           <div className="col-span-12 lg:col-span-5">
             <Lottie animationData={theme ? developerOne : developer} />
           </div>
-          <p className="col-span-12 lg:col-span-7 text-justify text-neutral-300 text-[15px]">
+          <p className="col-span-12 lg:col-span-7 text-justify text-white text-base">
             Hello! I am{" "}
-            <strong>Rakib Ahmed Junior MERN Stack Developer </strong>. As a
-            Junior Web Developer, I am eager to bring my technical skills and
-            passion for creating dynamic, user-friendly websites to a
+            <span className="bg-[#FFCD19] text-slate-900 px-2 mr-2 rounded font-medium">
+              Rakib Ahmed Junior MERN Stack Developer
+            </span>
+            . As a Junior Web Developer, I am eager to bring my technical skills
+            and passion for creating dynamic, user-friendly websites to a
             challenging and dynamic work environment. With a solid understanding
-            of <strong>HTML, CSS, JavaScript,</strong> and{" "}
-            <strong>React Js</strong> and a growing knowledge of back-end
-            technologies like <strong>Node Js, and Express Js</strong>. I am
-            confident in my ability to build and maintain websites that meet the
-            needs of users and clients alike. I am a quick learner and always
-            eager to take on new challenges, and I thrive in collaborative
-            environments where I can work with designers, senior developers, and
-            other stakeholders to bring projects to life. If you are looking for
-            a Junior Web Developer who is dedicated, detail-oriented, and eager
-            to grow and learn, please do not hesitate to reach out. I would be
-            thrilled to bring my skills and enthusiasm to your team!
+            of{" "}
+            <span className="bg-[#FFCD19] text-slate-900 px-2 mr-2 rounded font-medium">
+              HTML, CSS, JavaScript, and React Js
+            </span>{" "}
+            and a growing knowledge of back-end technologies like{" "}
+            <span className="bg-[#FFCD19] text-slate-900 px-2 mr-2 rounded font-medium">
+              Node Js, and Express Js
+            </span>
+            . I am confident in my ability to build and maintain websites that
+            meet the needs of users and clients alike. I am a quick learner and
+            always eager to take on new challenges, and I thrive in
+            collaborative environments where I can work with designers, senior
+            developers, and other stakeholders to bring projects to life. If you
+            are looking for a Junior Web Developer who is dedicated,
+            detail-oriented, and eager to grow and learn, please do not hesitate
+            to reach out. I would be thrilled to bring my skills and enthusiasm
+            to your team!
           </p>
         </div>
       </div>

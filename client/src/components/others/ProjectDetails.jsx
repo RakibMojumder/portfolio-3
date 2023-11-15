@@ -83,9 +83,9 @@ const ProjectDetails = ({ project, handleOpen }) => {
           </div>
 
           <div className="text-white">
-            <h1 className="text-2xl font-semibold dark:text-purple-500 text-emerald-500">
+            <h1 className="text-3xl font-semibold dark:text-purple-500 text-emerald-500">
               {project.name}
-              <span className="text-lg font-normal text-gray-300">
+              <span className="text-xl font-normal text-gray-300">
                 {" "}
                 - {project.description}
               </span>
