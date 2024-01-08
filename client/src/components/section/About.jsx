@@ -43,7 +43,7 @@ const About = () => {
             challenging and dynamic work environment. With a solid understanding
             of{" "}
             <span className="bg-[#FFCD19] text-slate-900 px-2 mr-2 rounded font-medium">
-              HTML, CSS, JavaScript, and React Js
+              HTML, CSS, JavaScript, React Js, Redux and Next JS
             </span>{" "}
             and a growing knowledge of back-end technologies like{" "}
             <span className="bg-[#FFCD19] text-slate-900 px-2 mr-2 rounded font-medium">

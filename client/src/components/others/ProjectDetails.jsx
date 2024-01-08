@@ -49,7 +49,7 @@ const ProjectDetails = ({ project, handleOpen }) => {
           transition: { duration: 0.3 },
         }}
         exit={{ opacity: 0, y: 50, transition: { duration: 0.3 } }}
-        className={`h-[90vh] md:h-[80vh] w-[95%] lg:w-1/2 bg-emerald-100/[0.03] dark:bg-purple-200/10 backdrop-blur-2xl rounded-md overflow-y-auto relative ${
+        className={`h-[90vh] md:h-[80vh] w-[95%] lg:w-1/2 bg-emerald-100/[0.03] dark:bg-purple-200/[0.05] backdrop-blur-3xl rounded-md overflow-y-auto relative ${
           theme ? "green-scroll" : "purple-scroll"
         }`}
       >
