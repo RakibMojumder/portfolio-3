@@ -3,7 +3,7 @@ import { projects } from "../../utils/data";
 const ResumeProject = () => {
   return (
     <div className="mt-10">
-      <h2 className="text-xl font-normal bg-purple-200/10 pl-3 py-1 rounded-md text-emerald-100 dark:text-purple-200">
+      <h2 className="text-xl font-normal bg-purple-200/10 pl-3 py-1 rounded-md text-secondary dark:text-purple-200">
         Projects
       </h2>
 

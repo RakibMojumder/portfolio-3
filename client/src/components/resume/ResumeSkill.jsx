@@ -1,7 +1,7 @@
 const ResumeSkill = () => {
   return (
     <div className="mt-10">
-      <h2 className="text-xl font-normal bg-purple-200/10 pl-3 py-1 rounded-md text-emerald-100 dark:text-purple-200">
+      <h2 className="text-xl font-normal bg-purple-200/10 pl-3 py-1 rounded-md text-secondary dark:text-purple-200">
         Skill & Technology
       </h2>
       <ul className="list-disc px-4 mt-4 space-y-2">

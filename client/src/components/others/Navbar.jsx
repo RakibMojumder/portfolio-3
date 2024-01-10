@@ -7,16 +7,16 @@ const Navbar = ({ handleOpen }) => {
   return (
     <motion.div
       key="Navbar"
-      initial={{ opacity: 0, scale: 0.5, x: "-50%" }}
+      initial={{ opacity: 0, x: "-50%" }}
       whileInView={{
         opacity: 1,
-        scale: 1,
-        transition: { duration: 0.3, ease: "easeOut", type: "spring" },
+        x: 0,
+        transition: { duration: 0.5, ease: "easeOut", type: "spring" },
       }}
-      exit={{ opacity: 0, scale: 0.5 }}
-      className="min-w-[92%] h-[87vh] bg-gray-600/60 backdrop-blur-xl py-6 px-3 sm:hidden overflow-y-auto z-50 fixed top-16 left-1/2 -translate-x-1/2 text-white rounded-md"
+      exit={{ opacity: 0, x: "-50%" }}
+      className="min-w-[75%] h-full bg-neutral-900 backdrop-blur-xl pt-6 pb-10 pr-0.5 sm:hidden overflow-y-auto z-50 fixed top-0 left-0 text-white rounded-md border-r border-neutral-600"
     >
-      <div className="pb-4 border-b">
+      <div className="pb-4 border-b border-b-neutral-600">
         <img
           src={myImage}
           alt="my image"
@@ -29,28 +29,62 @@ const Navbar = ({ handleOpen }) => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center gap-y-5 py-5">
-        <HashLink to="#home" smooth onClick={handleOpen}>
+      <div className="flex flex-col justify-center items-center divide-y divide-neutral-600">
+        <HashLink
+          to="#home"
+          smooth
+          onClick={handleOpen}
+          className="w-full py-1.5 pl-4"
+        >
           Home
         </HashLink>
-        <HashLink to="#about" smooth onClick={handleOpen}>
+        <HashLink
+          to="#about"
+          smooth
+          onClick={handleOpen}
+          className="w-full py-1.5 pl-4"
+        >
           About
         </HashLink>
-        <HashLink to="#project" smooth onClick={handleOpen}>
+        <HashLink
+          to="#project"
+          smooth
+          onClick={handleOpen}
+          className="w-full py-1.5 pl-4"
+        >
           Project
         </HashLink>
-        <HashLink to="#skills" smooth onClick={handleOpen}>
+        <HashLink
+          to="#skills"
+          smooth
+          onClick={handleOpen}
+          className="w-full py-1.5 pl-4"
+        >
           Skills
         </HashLink>
-        <HashLink to="#service" smooth onClick={handleOpen}>
+        <HashLink
+          to="#service"
+          smooth
+          onClick={handleOpen}
+          className="w-full py-1.5 pl-4"
+        >
           Services
         </HashLink>
-        <HashLink to="#contact" smooth onClick={handleOpen}>
+        <HashLink
+          to="#contact"
+          smooth
+          onClick={handleOpen}
+          className="w-full py-1.5 pl-4"
+        >
           Contact
         </HashLink>
-        <Link to="others/resume">Resume</Link>
-        <Link to="others/blog">Blog</Link>
-        <ThemeSwitcher />
+        <Link to="others/resume" className="w-full py-1.5 pl-4">
+          Resume
+        </Link>
+        <Link to="others/blog" className="w-full py-1.5 pl-4">
+          Blog
+        </Link>
+        <ThemeSwitcher className={"pt-3 border-b pl-4"} />
       </div>
     </motion.div>
   );

@@ -14,14 +14,12 @@ const Project = ({ project }) => {
 
   return (
     <motion.div
-      initial={{ scale: 0.4, opacity: 0 }}
-      whileInView={{ scale: 1, opacity: 1 }}
+      initial={{ y: 100, opacity: 0.2 }}
+      whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true }}
       transition={{
-        type: "spring",
-        duration: 1,
-        ease: "easeIn",
-        bounce: 0.3,
+        delay: 0.06,
+        duration: 1.5,
       }}
     >
       <Image src={project.image[0]} height={208} />
@@ -34,7 +32,7 @@ const Project = ({ project }) => {
         </p>
         <button
           onClick={handleOpen}
-          className="group w-full py-1 bg-emerald-500 dark:bg-primary text-white text-sm rounded-full flex justify-center items-center"
+          className="group w-full py-1 bg-secondary dark:text-white dark:bg-primary text-sm rounded-full flex justify-center items-center"
         >
           <span>Details</span>
           <BiChevronRight

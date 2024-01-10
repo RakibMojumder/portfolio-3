@@ -20,6 +20,8 @@ specifiers:
   react-query: ^3.39.3
   react-router-dom: ^6.14.1
   react-router-hash-link: ^2.4.3
+  smooth-scrollbar: ^8.8.4
+  smooth-scrollbar-react: ^2.4.1
   tailwindcss: ^3.3.2
   vite: ^4.3.9
 
@@ -34,6 +36,8 @@ dependencies:
   react-query: 3.39.3_biqbaboplfbrettd7655fr4n2y
   react-router-dom: 6.14.1_biqbaboplfbrettd7655fr4n2y
   react-router-hash-link: 2.4.3_xd43qfhczcovcj3bcwybk4o5jy
+  smooth-scrollbar: 8.8.4
+  smooth-scrollbar-react: 2.4.1_uoikrqsbts62lg232uqibut5z4
 
 devDependencies:
   '@types/react': 18.2.14
@@ -952,6 +956,11 @@ packages:
   /convert-source-map/1.9.0:
     resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
     dev: true
+
+  /core-js/3.35.0:
+    resolution: {integrity: sha512-ntakECeqg81KqMueeGJ79Q5ZgQNR+6eaE8sxGCx62zMbAIj65q+uYvatToew3m6eAGdU4gNZwpZ34NMe4GYswg==}
+    requiresBuild: true
+    dev: false
 
   /cross-spawn/7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
@@ -2340,6 +2349,23 @@ packages:
       object-inspect: 1.12.3
     dev: true
 
+  /smooth-scrollbar-react/2.4.1_uoikrqsbts62lg232uqibut5z4:
+    resolution: {integrity: sha512-9UuVZtQO1V2oeWb1n13ZgXcZ0nM79Tqtgov/8xUeZUWicTIg8xO+tHzhfBrE/3DlvGEQ+keFDX96UGTzICoNSg==}
+    peerDependencies:
+      react: '>=16.8'
+      smooth-scrollbar: ^8.0.0
+    dependencies:
+      react: 18.2.0
+      smooth-scrollbar: 8.8.4
+    dev: false
+
+  /smooth-scrollbar/8.8.4:
+    resolution: {integrity: sha512-Wn2Q/iE+PE1ef4EfhFMhgaIMfSrjJl2LalRu0hBWSrw5nZKGsUIjWFWHnLB/Lpx7N+a1pJH6+wkQzBr+5nWPUg==}
+    dependencies:
+      core-js: 3.35.0
+      tslib: 1.14.1
+    dev: false
+
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
@@ -2492,6 +2518,10 @@ packages:
   /ts-interface-checker/0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
+
+  /tslib/1.14.1:
+    resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
+    dev: false
 
   /tslib/2.6.0:
     resolution: {integrity: sha512-7At1WUettjcSRHXCyYtTselblcHl9PJFFVKiCAy/bY97+BPZXSQ2wbq0P9s8tK2G7dFQfNnlJnPAiArVBVBsfA==}

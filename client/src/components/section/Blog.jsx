@@ -19,12 +19,12 @@ const letters = {
 const Blog = () => {
   const line = "Coming Soon";
   return (
-    <div className="h-full flex justify-center items-center">
+    <div className="h-full flex justify-center items-center w-full">
       <motion.h1
         initial="hidden"
         animate="visible"
         variants={sentence}
-        className="text-4xl md:text-7xl font-bold bg-gradient-to-tr from-emerald-500 dark:from-purple-500 to-emerald-200 dark:to-purple-300 text-transparent bg-clip-text py-2 mt-10 sm:mt-0"
+        className="text-4xl md:text-7xl font-bold bg-gradient-to-tr from-secondary dark:from-purple-500 to-emerald-200 dark:to-purple-300 text-transparent bg-clip-text py-2 mt-10 sm:mt-0"
       >
         {line.split("").map((char, index) => (
           <motion.span

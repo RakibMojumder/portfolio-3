@@ -51,7 +51,7 @@ export const skills = [
     },
     {
         id: 5,
-        name: 'Styled...',
+        name: 'Styled Component',
         img: styledComponents
     },
     {

@@ -1,0 +1,176 @@
+[
+  {
+    "projectNo": 1,
+    "name": "Shopno",
+    "image": [
+      "https://i.ibb.co/RH22yjb/shopno-1.png",
+      "https://i.ibb.co/ZxL6PsY/shopno-2.png",
+      "https://i.ibb.co/ZgNJBkB/shopno-3.png",
+      "https://i.ibb.co/MGvNh1g/shopno-4.png",
+      "https://i.ibb.co/JsVz1D0/shopno-5.png",
+      "https://i.ibb.co/Y72c10h/shopno-6.png"
+    ],
+    "description": "A large E-commerce website where user can buy products",
+    "technology": [
+      "Next JS",
+      "Redux",
+      "Tailwind CSS",
+      "Express JS",
+      "MongoDB",
+      "SSL Commerz",
+      "Stripe"
+    ],
+    "features": [
+      "Users can filter and sort products by categories and price also user can give reviews.",
+      "There is an Admin dashboard panel where an admin can manage all the things on the website.",
+      "PUsers can pay using SSL Commerz and Stripe."
+    ],
+    "link": {
+      "liveLink": "https://shopno-zeta.vercel.app",
+      "githubClient": "https://github.com/RakibMojumder/shopno-client",
+      "githubServer": "https://github.com/RakibMojumder/shopno-server"
+    }
+  },
+  {
+    "projectNo": 2,
+    "name": "Quiziti",
+    "image": [
+      "https://i.ibb.co/Y8C8VGv/quiziti.png",
+      "https://i.ibb.co/pvMN1Mb/quiziti-1.png",
+      "https://i.ibb.co/TWvDKkr/quiziti-2.png",
+      "https://i.ibb.co/L0CCQVd/quiziti-3.png",
+      "https://i.ibb.co/hcGPrXy/quiziti-4.png",
+      "https://i.ibb.co/Qmh4YKK/quiziti.png"
+    ],
+    "description": "A course & quiz related MERN stack project",
+    "technology": [
+      "React",
+      "Tailwind CSS",
+      "Express JS",
+      "MongoDB",
+      "Passport JS",
+      "Context API",
+      "Stripe"
+    ],
+    "features": [
+      "A user can purchase courses here and learn programming related topics.",
+      "A user also can test his programming knowledge by giving the quiz exam on multiple topics",
+      "Private route and JWT Authentication have been implemented."
+    ],
+    "link": {
+      "liveLink": "https://quiziti-sigma.vercel.app/",
+      "githubClient": "https://github.com/RakibMojumder/quiziti-client",
+      "githubServer": "https://github.com/RakibMojumder/quiziti-server"
+    }
+  },
+  {
+    "projectNo": 3,
+    "name": "Best Buy",
+    "image": [
+      "https://i.ibb.co/4SY3xM0/best-buy.png",
+      "https://i.ibb.co/H25rxxj/best-buy-1.png",
+      "https://i.ibb.co/0FrYR6j/best-buy-2.png",
+      "https://i.ibb.co/pfZ6GJV/best-buy-3.png",
+      "https://i.ibb.co/F8zbDz9/best-buy-4.png",
+      "https://i.ibb.co/wKpfXGv/best-buy.png"
+    ],
+    "description": "Used laptop buy and sale related E-commerce website",
+    "technology": [
+      "React",
+      "Tailwind CSS",
+      "Express JS",
+      "MongoDB",
+      "Firebase",
+      "Context API",
+      "Stripe"
+    ],
+    "features": [
+      "Users can filter products by categories and can buy products and give reviews. As a payment system stripe is used here.",
+      "An admin can verify a user or seller & a user or seller can be an admin if an admin allows also an admin can remove a user or seller.",
+      "A seller can add or remove products and also can see who bought his products."
+    ],
+    "link": {
+      "liveLink": "https://best-buy-be3c4.web.app/",
+      "githubClient": "https://github.com/RakibMojumder/Best-buy-client",
+      "githubServer": "https://github.com/RakibMojumder/Best-buy-server"
+    }
+  },
+  {
+    "projectNo": 4,
+    "name": "Rakib Consultancy",
+    "image": [
+      "https://i.ibb.co/sKM2tN8/rakib-consultancy.png",
+      "https://i.ibb.co/Bw9F3qL/rakib-consultancy-1.png",
+      "https://i.ibb.co/C1bhD6Z/rakib-consultancy-2.png",
+      "https://i.ibb.co/myq4RWV/rakib-consultancy-3.png",
+      "https://i.ibb.co/x2HWDz0/rakib-consultancy-4.png",
+      "https://i.ibb.co/BNs4NBn/rakib-consultancy.png"
+    ],
+    "description": "Law & tax related services website",
+    "technology": [
+      "React",
+      "Tailwind CSS",
+      "Express JS",
+      "MongoDB",
+      "Firebase",
+      "Context API"
+    ],
+    "features": [
+      "There are multiple services a user can take one or more services.",
+      "A user has to log in if he wants to add new services.",
+      "Users can give, add and remove their reviews and also see what others say"
+    ],
+    "link": {
+      "liveLink": "https://rakib-consultancy.web.app/",
+      "githubClient": "https://github.com/RakibMojumder/Rakib-consultancy-client",
+      "githubServer": "https://github.com/RakibMojumder/Rakib-consultancy-server"
+    }
+  },
+  {
+    "projectNo": 5,
+    "name": "Instruct Course",
+    "image": [
+      "https://i.ibb.co/K6Tc6pN/instruct-course.png",
+      "https://i.ibb.co/Y0PpcCj/instruct-course-1.png",
+      "https://i.ibb.co/YN0msV8/instruct-course-2.png",
+      "https://i.ibb.co/QdGcTmD/instruct-course-3.png",
+      "https://i.ibb.co/QdGcTmD/instruct-course-3.png",
+      "https://i.ibb.co/27XvJDW/Screenshot-9.png"
+    ],
+    "description": "A course website where a user can find subject wise multiple courses and enroll in the courses",
+    "technology": [
+      "React",
+      "Tailwind CSS",
+      "Express JS",
+      "MongoDB",
+      "Firebase",
+      "Context API"
+    ],
+    "features": [
+      "There are multiple subjects for a student. He can choose one to enroll in and start learning.",
+      "Implement private route. Only logged-in users can access that route."
+    ],
+    "link": {
+      "liveLink": "https://instruct-course.web.app/",
+      "githubClient": "https://github.com/RakibMojumder/Instruct-course-client",
+      "githubServer": "https://github.com/RakibMojumder/Instruct-course-server"
+    }
+  },
+  {
+    "projectNo": 6,
+    "name": "My Portfolio",
+    "image": [
+      "https://i.ibb.co/XxfFxzq/image-1.png",
+      "https://i.ibb.co/LJnHj30/image-2.png",
+      "https://i.ibb.co/zR0tg73/image-3.png",
+      "https://i.ibb.co/ZfvgMtw/image-4.png",
+      "https://i.ibb.co/PcvBfVf/image-5.png",
+      "https://i.ibb.co/QdVwZd6/image-6.png"
+    ],
+    "description": "This is my portfolio website",
+    "technology": ["Next JS", "Tailwind CSS", "Framer Motion"],
+    "link": {
+      "liveLink": "https://rakib-ahmed.vercel.app"
+    }
+  }
+]

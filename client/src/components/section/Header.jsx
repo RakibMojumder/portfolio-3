@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <section
       id="home"
-      className="min-h-full flex justify-center items-center p-4 pt-20 sm:pt-0"
+      className="sm:h-[90vh] flex justify-center items-center p-4 pt-20 sm:pt-0"
     >
       <div>
         <div className="text-white text-center space-y-3">
@@ -50,7 +50,7 @@ const Header = () => {
                   </motion.span>
                 ))}
               </h3>
-              <h1 className="text-4xl md:text-5xl lg:text-7xl text-emerald-500 dark:text-primary font-extrabold uppercase font-PlaypenSans my-3">
+              <h1 className="text-4xl md:text-5xl lg:text-7xl text-secondary dark:text-primary font-extrabold uppercase font-PlaypenSans my-3">
                 {lineTwo.split("").map((char, index) => (
                   <motion.span
                     key={char + "-" + index}
@@ -91,10 +91,10 @@ const Header = () => {
             href="mailto:sujonahmed45a4@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-1 flex items-center gap-3 text-white underline relative before:absolute before:top-0 before:left-0 before:h-0 before:w-0 before:border-transparent before:border-l before:border-t after:absolute after:bottom-0 after:right-0 after:h-0 after:w-0 after:border-r after:border-b before:transition-all before:duration-500 ease-linear hover:before:h-full hover:before:w-full hover:before:border-emerald-500 dark:hover:before:border-primary after:border-transparent after:transition-all after:duration-500 after:ease-linear hover:after:h-full hover:after:w-full hover:after:border-emerald-500 dark:hover:after:border-primary"
+            className="px-8 py-1 flex items-center gap-3 text-white underline relative before:absolute before:top-0 before:left-0 before:h-0 before:w-0 before:border-transparent before:border-l before:border-t after:absolute after:bottom-0 after:right-0 after:h-0 after:w-0 after:border-r after:border-b before:transition-all before:duration-500 ease-linear hover:before:h-full hover:before:w-full hover:before:border-secondary dark:hover:before:border-primary after:border-transparent after:transition-all after:duration-500 after:ease-linear hover:after:h-full hover:after:w-full hover:after:border-secondary dark:hover:after:border-primary"
           >
             <span>Hire me</span>
-            <BsSendCheck className="text-emerald-500 dark:text-primary text-lg" />
+            <BsSendCheck className="text-secondary dark:text-primary text-lg" />
           </a>
         </div>
         <SocialLinks />

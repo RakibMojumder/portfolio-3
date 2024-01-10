@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Bug, Responsive, WebDev } from "../../utils/icons";
 import Title from "../others/Title";
 
@@ -6,22 +5,9 @@ const MobileServices = () => {
   return (
     <div id="service" className="lg:hidden mb-14">
       <Title labelOne={"Services"} labelTwo={"What i do"} />
-      {/* <motion.h1
-        initial={{ x: -300, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{
-          duration: 1,
-          type: "spring",
-          ease: "easeIn",
-          bounce: 0.5,
-        }}
-        className="text-center font-extrabold text-4xl sm:text-5xl uppercase text-neutral-200 pt-20 sm:pt-4 mb-14"
-      >
-        My <span className="text-emerald-500 dark:text-primary">Services</span>
-      </motion.h1> */}
+
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 px-5">
-        <motion.div className="bg-emerald-200/5 dark:bg-purple-200/10 p-3 text-center rounded-md z-30 overflow-hidden relative before:absolute before:top-0 before:left-0 before:h-20 before:w-20 before:bg-emerald-500 dark:before:bg-primary before:rounded-br-full before:-z-10 before:duration-500 hover:before:w-[150%] hover:before:h-[150%]">
+        <div className="bg-emerald-200/5 dark:bg-purple-200/10 p-3 text-center rounded-md z-30 overflow-hidden relative before:absolute before:top-0 before:left-0 before:h-20 before:w-20 before:bg-secondary dark:before:bg-primary before:rounded-br-full before:-z-10 before:duration-500 hover:before:w-[150%] hover:before:h-[150%]">
           <div className="flex items-start gap-8">
             <WebDev />
             <div>
@@ -40,18 +26,8 @@ const MobileServices = () => {
             in creating engaging online experiences that leave a lasting
             impression.
           </p>
-        </motion.div>
-        <motion.div
-          viewport={{ once: true }}
-          transition={{
-            type: "spring",
-            duration: 1,
-            ease: "easeIn",
-            bounce: 0.5,
-            delay: 0.2,
-          }}
-          className="bg-emerald-200/5 dark:bg-purple-200/10 p-3 text-center rounded-md z-30 overflow-hidden relative before:absolute before:top-0 before:left-0 before:h-20 before:w-20 before:bg-emerald-500 dark:before:bg-primary before:rounded-br-full before:-z-10 before:duration-500 hover:before:w-[150%] hover:before:h-[150%]"
-        >
+        </div>
+        <div className="bg-emerald-200/5 dark:bg-purple-200/10 p-3 text-center rounded-md z-30 overflow-hidden relative before:absolute before:top-0 before:left-0 before:h-20 before:w-20 before:bg-secondary dark:before:bg-primary before:rounded-br-full before:-z-10 before:duration-500 hover:before:w-[150%] hover:before:h-[150%]">
           <div className="flex items-start gap-8">
             <WebDev />
             <div>
@@ -70,18 +46,8 @@ const MobileServices = () => {
             robust and dynamic online solutions that meet the unique needs of my
             clients.
           </p>
-        </motion.div>
-        <motion.div
-          viewport={{ once: true }}
-          transition={{
-            type: "spring",
-            duration: 1,
-            ease: "easeIn",
-            bounce: 0.5,
-            delay: 0.2,
-          }}
-          className="bg-emerald-200/5 dark:bg-purple-200/10 p-3 text-center rounded-md z-30 overflow-hidden relative before:absolute before:top-0 before:left-0 before:h-20 before:w-20 before:bg-emerald-500 dark:before:bg-primary before:rounded-br-full before:-z-10 before:duration-500 hover:before:w-[150%] hover:before:h-[150%]"
-        >
+        </div>
+        <div className="bg-emerald-200/5 dark:bg-purple-200/10 p-3 text-center rounded-md z-30 overflow-hidden relative before:absolute before:top-0 before:left-0 before:h-20 before:w-20 before:bg-secondary dark:before:bg-primary before:rounded-br-full before:-z-10 before:duration-500 hover:before:w-[150%] hover:before:h-[150%]">
           <div className="flex items-start gap-8">
             <Responsive />
             <div>
@@ -101,18 +67,8 @@ const MobileServices = () => {
             crafting engaging online experiences that provide an optimal viewing
             and interaction experience for every user.
           </p>
-        </motion.div>
-        <motion.div
-          viewport={{ once: true }}
-          transition={{
-            type: "spring",
-            duration: 1,
-            ease: "easeIn",
-            bounce: 0.5,
-            delay: 0.2,
-          }}
-          className="bg-emerald-200/5 dark:bg-purple-200/10 p-3 text-center rounded-md z-30 overflow-hidden relative before:absolute before:top-0 before:left-0 before:h-20 before:w-20 before:bg-emerald-500 dark:before:bg-primary before:rounded-br-full before:-z-10 before:duration-500 hover:before:w-[150%] hover:before:h-[150%]"
-        >
+        </div>
+        <div className="bg-emerald-200/5 dark:bg-purple-200/10 p-3 text-center rounded-md z-30 overflow-hidden relative before:absolute before:top-0 before:left-0 before:h-20 before:w-20 before:bg-secondary dark:before:bg-primary before:rounded-br-full before:-z-10 before:duration-500 hover:before:w-[150%] hover:before:h-[150%]">
           <div className="flex items-start gap-8">
             <Bug />
             <div>
@@ -132,7 +88,7 @@ const MobileServices = () => {
             bugs that may disrupt the user experience or hinder the performance
             of your website.
           </p>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

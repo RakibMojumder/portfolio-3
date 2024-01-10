@@ -11,20 +11,7 @@ const Services = () => {
       className="min-h-full w-full mb-32 overflow-hidden hidden lg:block"
     >
       <Title labelOne={"Services"} labelTwo={"What i do"} />
-      {/* <motion.h1
-        initial={{ x: -300, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{
-          duration: 1,
-          type: "spring",
-          ease: "easeIn",
-          bounce: 0.5,
-        }}
-        className="text-center font-extrabold text-5xl uppercase text-neutral-200 pt-4 mb-14"
-      >
-        My <span className="text-emerald-500 dark:text-primary">Services</span>
-      </motion.h1> */}
+
       <div className="relative px-5">
         <div className="flex flex-col items-center gap-y-80">
           <motion.div
@@ -32,12 +19,9 @@ const Services = () => {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{
-              type: "spring",
               duration: 1,
-              ease: "easeIn",
-              bounce: 0.5,
             }}
-            className="bg-emerald-200/5 dark:bg-purple-200/10 p-3 text-center rounded-md w-1/3 z-30 overflow-hidden relative before:absolute before:top-0 before:left-0 before:h-20 before:w-20 before:bg-emerald-500 dark:before:bg-primary before:rounded-br-full before:-z-10 before:duration-500 hover:before:w-[150%] hover:before:h-[150%]"
+            className="bg-emerald-200/5 dark:bg-purple-200/10 p-3 text-center rounded-md w-1/3 z-30 overflow-hidden relative before:absolute before:top-0 before:left-0 before:h-20 before:w-20 before:bg-secondary dark:before:bg-primary before:rounded-br-full before:-z-10 before:duration-500 hover:before:w-[150%] hover:before:h-[150%]"
           >
             <div className="flex items-start gap-8">
               <WebDev />
@@ -63,13 +47,10 @@ const Services = () => {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{
-              type: "spring",
               duration: 1,
-              ease: "easeIn",
-              bounce: 0.5,
               delay: 0.2,
             }}
-            className="bg-emerald-200/5 dark:bg-purple-200/10 p-3 text-center rounded-md w-1/3 z-30 overflow-hidden relative before:absolute before:top-0 before:left-0 before:h-20 before:w-20 before:bg-emerald-500 dark:before:bg-primary before:rounded-br-full before:-z-10 before:duration-500 hover:before:w-[150%] hover:before:h-[150%]"
+            className="bg-emerald-200/5 dark:bg-purple-200/10 p-3 text-center rounded-md w-1/3 z-30 overflow-hidden relative before:absolute before:top-0 before:left-0 before:h-20 before:w-20 before:bg-secondary dark:before:bg-primary before:rounded-br-full before:-z-10 before:duration-500 hover:before:w-[150%] hover:before:h-[150%]"
           >
             <div className="flex items-start gap-8">
               <WebDev />
@@ -98,13 +79,11 @@ const Services = () => {
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{
-                type: "spring",
                 duration: 1,
-                ease: "easeIn",
-                bounce: 0.5,
+
                 delay: 0.2,
               }}
-              className="bg-emerald-200/5 dark:bg-purple-200/10 p-3 text-center rounded-md z-30 overflow-hidden relative before:absolute before:top-0 before:left-0 before:h-20 before:w-20 before:bg-emerald-500 dark:before:bg-primary before:rounded-br-full before:-z-10 before:duration-500 hover:before:w-[150%] hover:before:h-[150%]"
+              className="bg-emerald-200/5 dark:bg-purple-200/10 p-3 text-center rounded-md z-30 overflow-hidden relative before:absolute before:top-0 before:left-0 before:h-20 before:w-20 before:bg-secondary dark:before:bg-primary before:rounded-br-full before:-z-10 before:duration-500 hover:before:w-[150%] hover:before:h-[150%]"
             >
               <div className="flex items-start gap-8">
                 <Responsive />
@@ -134,13 +113,11 @@ const Services = () => {
               whileInView={{ x: 0 }}
               viewport={{ once: true }}
               transition={{
-                type: "spring",
                 duration: 1,
-                ease: "easeIn",
-                bounce: 0.5,
+
                 delay: 0.2,
               }}
-              className="bg-emerald-200/5 dark:bg-purple-200/10 p-3 text-center rounded-md z-30 overflow-hidden relative before:absolute before:top-0 before:left-0 before:h-20 before:w-20 before:bg-emerald-500 dark:before:bg-primary before:rounded-br-full before:-z-10 before:duration-500 hover:before:w-[150%] hover:before:h-[150%]"
+              className="bg-emerald-200/5 dark:bg-purple-200/10 p-3 text-center rounded-md z-30 overflow-hidden relative before:absolute before:top-0 before:left-0 before:h-20 before:w-20 before:bg-secondary dark:before:bg-primary before:rounded-br-full before:-z-10 before:duration-500 hover:before:w-[150%] hover:before:h-[150%]"
             >
               <div className="flex items-start gap-8">
                 <Bug />

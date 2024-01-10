@@ -1,9 +1,8 @@
 import { skills } from "../../utils/data";
 import SkillCard from "../others/SkillCard";
-import { motion } from "framer-motion";
 import Title from "../others/Title";
 
-const Skills = ({ targetRef, rotateX, rotateZ, skewY }) => {
+const Skills = ({ targetRef }) => {
   return (
     <section
       id="skills"
@@ -12,29 +11,10 @@ const Skills = ({ targetRef, rotateX, rotateZ, skewY }) => {
     >
       <div>
         <Title labelOne={"Expertise"} labelTwo={"Skills"} />
-        {/* <motion.h1
-          initial={{ x: 300 }}
-          whileInView={{ x: 0 }}
-          viewport={{ once: true }}
-          transition={{
-            duration: 1,
-            type: "spring",
-            ease: "easeIn",
-            bounce: 0.5,
-          }}
-          className="text-center font-extrabold text-4xl sm:text-5xl uppercase text-neutral-200 mb-10 pt-4"
-        >
-          My <span className="text-emerald-500 dark:text-primary">Skills</span>
-        </motion.h1> */}
-        <div className="flex items-center flex-wrap gap-3 px-2 sm:p-4">
+
+        <div className="flex items-center flex-wrap gap-3 lg:gap-6 px-5 sm:p-4 lg:px-8">
           {skills.map((skill) => (
-            <SkillCard
-              key={skill.id}
-              skill={skill}
-              rotateX={rotateX}
-              rotateZ={rotateZ}
-              skewY={skewY}
-            />
+            <SkillCard key={skill.id} skill={skill} length={skills.length} />
           ))}
         </div>
       </div>

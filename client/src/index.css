@@ -12,22 +12,38 @@
         text-align: center;
         word-spacing: 2px;
     }
-}
 
-::-webkit-scrollbar {
-    width: 4px;
-}
+    ::-webkit-scrollbar {
+        width: 0;
+    }
 
-#sidebar::-webkit-scrollbar {
-    display: none;
-}
+    #sidebar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
 
-.purple-scroll::-webkit-scrollbar-thumb {
-    background: #965CF0;
-    border-radius: 10px;
-}
+    #sidebar::-webkit-scrollbar {
+        display: none;
+    }
 
-.green-scroll::-webkit-scrollbar-thumb {
-    background: #10B981;
-    border-radius: 10px;
+    .purple-scroll {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    /* .purple-scroll::-webkit-scrollbar-thumb {
+        background: #965CF0;
+        border-radius: 10px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .purple-scroll::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    .green-scroll::-webkit-scrollbar-thumb {
+        background: #10B981;
+        border-radius: 10px;
+    } */
 }

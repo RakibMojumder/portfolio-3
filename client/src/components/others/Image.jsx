@@ -27,4 +27,3 @@ const Image = ({ src, height, width, className, alt }) => {
 };
 
 export default Image;
- 

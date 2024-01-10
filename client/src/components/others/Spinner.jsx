@@ -5,7 +5,7 @@ const Spinner = ({ small }) => {
         aria-hidden="true"
         className={`${
           small ? "w-10 h-10" : "w-16 h-16"
-        } mr-2 text-emerald-50 animate-spin dark:text-purple-100 fill-emerald-500 dark:fill-primary`}
+        } mr-2 text-emerald-50 animate-spin dark:text-purple-100 fill-secondary dark:fill-primary`}
         viewBox="0 0 100 101"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
