@@ -158,6 +158,35 @@
   },
   {
     "projectNo": 6,
+    "name": "Quick Quiz",
+    "image": [
+      "https://i.ibb.co/Tr6979T/image-1.png",
+      "https://i.ibb.co/DQbj09W/image-2.png",
+      "https://i.ibb.co/Jyr3PJx/image-3.png",
+      "https://i.ibb.co/b7zF6Kn/image-4.png",
+      "https://i.ibb.co/dtJwtSM/image-5.png",
+      "https://i.ibb.co/pjVKPDR/image-6.png"
+    ],
+    "description": "A quiz site to justify yourself what you have learned about your favorite programming languages",
+    "technology": [
+      "React JS JS",
+      "Tailwind CSS",
+      "Recharts",
+      "Daisy UI",
+      "React Router Dom",
+      "sweetalert2"
+    ],
+    "features": [
+      "A user can test his programming knowledge by giving the quiz exam on multiple topics",
+      "Fully Responsive site for all devices."
+    ],
+    "link": {
+      "liveLink": "https://quick-quiz-4554.netlify.app",
+      "githubClient": "https://github.com/RakibMojumder/Quick-quiz"
+    }
+  },
+  {
+    "projectNo": 7,
     "name": "My Portfolio",
     "image": [
       "https://i.ibb.co/XxfFxzq/image-1.png",
