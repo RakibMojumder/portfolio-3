@@ -28,116 +28,138 @@ import { BiHomeSmile } from "react-icons/bi";
 import { FaRegUserCircle } from "react-icons/fa";
 import { RiListSettingsFill, RiContactsLine } from "react-icons/ri";
 
-export const skills = [
+export const skillsData = [
     {
         id: 1,
         name: 'HTML',
-        img: html
+        img: html,
+        label: 'Frontend'
     },
     {
         id: 2,
         name: 'CSS',
-        img: css
+        img: css,
+        label: 'Frontend'
     },
     {
         id: 3,
         name: 'Bootstrap',
-        img: bootstrap
+        img: bootstrap,
+        label: 'Frontend'
     },
     {
         id: 4,
-        name: 'Tailwind',
-        img: tailwind
+        name: 'Tailwind CSS',
+        img: tailwind,
+        label: 'Frontend'
     },
     {
         id: 5,
         name: 'Styled Component',
-        img: styledComponents
+        img: styledComponents,
+        label: 'Frontend'
     },
     {
         id: 6,
         name: 'JavaScript',
-        img: js
+        img: js,
+        label: 'Frontend'
     },
     {
         id: 7,
-        name: 'React',
-        img: react
+        name: 'React JS',
+        img: react,
+        label: 'Frontend'
     },
     {
         id: 8,
         name: 'Redux',
-        img: redux
+        img: redux,
+        label: 'Frontend'
     },
     {
         id: 9,
         name: 'Next JS',
-        img: next
+        img: next,
+        label: 'Frontend'
     },
     {
         id: 10,
         name: 'Node',
-        img: node
+        img: node,
+        label: 'Backend'
     },
     {
         id: 11,
         name: 'Express',
-        img: express
+        img: express,
+        label: 'Backend'
     },
     {
         id: 12,
         name: 'JWT',
-        img: jwt
+        img: jwt,
+        label: 'Backend'
     },
     {
         id: 13,
         name: 'Passport',
-        img: passport
+        img: passport,
+        label: 'Backend'
     },
     {
         id: 14,
         name: 'MongoDB',
-        img: mongodb
+        img: mongodb,
+        label: 'Database'
     },
     {
         id: 15,
         name: 'Firebase',
-        img: firebase
+        img: firebase,
+        label: 'Frontend'
     },
     {
         id: 16,
         name: 'Git',
-        img: git
+        img: git,
+        label: 'Tools'
     },
     {
         id: 17,
         name: 'Github',
-        img: github
+        img: github,
+        label: 'Tools'
     },
     {
         id: 18,
         name: 'Netlify',
-        img: netlify
+        img: netlify,
+        label: 'Tools'
     },
     {
         id: 19,
         name: 'Vercel',
-        img: vercel
+        img: vercel,
+        label: 'Tools'
     },
     {
         id: 20,
         name: 'Figma',
-        img: figma
+        img: figma,
+        label: 'Tools'
     },
     {
         id: 21,
         name: 'TypeScript',
-        img: typeScript
+        img: typeScript,
+        label: 'Frontend'
     },
     {
         id: 22,
         name: 'Material UI',
-        img: material
+        img: material,
+        label: 'Frontend'
     }
 ]
 
@@ -149,7 +171,7 @@ export const projects = [
         sourceCode: [{ name: 'Live', link: '' }, { name: 'Client', link: '' }, { name: 'Server', link: '' }],
         features: ['A user can purchase courses here and learn programming related topics.', 'A user also can test his programming knowledge by giving the quiz exam on multiple topics.', 'Private route and JWT Authentication have been implemented.'],
         technology: {
-            title: 'Technology', tech: 'React | Tailwind CSS | Express JS | MongoBD | Passport JS | Context API | Stripe'
+            title: 'Technology', label: 'React | Tailwind CSS | Express JS | MongoBD | Passport JS | Context API | Stripe'
         }
     },
     {
@@ -159,7 +181,7 @@ export const projects = [
         sourceCode: [{ name: 'Live', link: '' }, { name: 'Client', link: '' }, { name: 'Server', link: '' }],
         features: ['Users can filter products by categories and can buy products and give reviews. As a payment system stripe is used here.', 'An admin can verify a user or seller & a user or seller can be an admin if an admin allows also an admin can remove a user or seller.', 'A seller can add or remove products and also can see who bought his products.'],
         technology: {
-            title: 'Technology', tech: 'React | Tailwind CSS | Express JS | MongoDB | Firebase | Stripe'
+            title: 'Technology', label: 'React | Tailwind CSS | Express JS | MongoDB | Firebase | Stripe'
         }
     },
     {
@@ -169,7 +191,7 @@ export const projects = [
         sourceCode: [{ name: 'Live', link: '' }, { name: 'Client', link: '' }, { name: 'Server', link: '' }],
         features: ['There are multiple services a user can take one or more services.', 'A user has to log in if he wants to add new services.', 'Users can give, add and remove their reviews and also see what others say.'],
         technology: {
-            title: 'Technology', tech: 'React | Tailwind CSS | Express JS | MongoDB | Firebase'
+            title: 'Technology', label: 'React | Tailwind CSS | Express JS | MongoDB | Firebase'
         }
     },
 ]

@@ -16,7 +16,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-full flex justify-center items-center pt-10 sm:p-4 px-3 sm:px-0 overflow-x-hidden"
+      className="min-h-full flex justify-center items-center pt-10 sm:p-4 px-3 overflow-x-hidden"
     >
       <div>
         <Title labelOne={"Contact"} labelTwo={"With me"} />
@@ -46,25 +46,25 @@ const Contact = () => {
                 type="text"
                 placeholder="Name"
                 onChange={handleChange}
-                className="w-full bg-transparent py-1 pl-3 border border-slate-600 focus:border-secondary dark:focus:border-primary text-sm rounded-sm focus:outline-none"
+                className="w-full bg-transparent py-1 pl-3 border-b border-neutral-800 dark:border-purple-200/10 focus:border-secondary dark:focus:border-primary text-sm rounded-sm focus:outline-none"
               />
               <input
                 type="email"
                 placeholder="Email"
                 onChange={handleChange}
-                className="w-full bg-transparent py-1 pl-3 border border-slate-600 focus:border-secondary dark:focus:border-primary text-sm rounded-sm focus:outline-none"
+                className="w-full bg-transparent py-1 pl-3 border-b border-neutral-800 dark:border-purple-200/10 focus:border-secondary dark:focus:border-primary text-sm rounded-sm focus:outline-none"
               />
               <input
                 type="text"
                 placeholder="Subject"
                 onChange={handleChange}
-                className="w-full bg-transparent py-1 pl-3 border border-slate-600 focus:border-secondary dark:focus:border-primary text-sm rounded-sm focus:outline-none"
+                className="w-full bg-transparent py-1 pl-3 border-b border-neutral-800 dark:border-purple-200/10 focus:border-secondary dark:focus:border-primary text-sm rounded-sm focus:outline-none"
               />
               <textarea
                 name=""
                 placeholder="Message"
                 onChange={handleChange}
-                className="w-full h-20 bg-transparent py-1 pl-3 border border-slate-600 focus:border-secondary dark:focus:border-primary text-sm rounded-sm focus:outline-none"
+                className="w-full bg-transparent py-1 pl-3 border-b border-neutral-800 dark:border-purple-200/10 focus:border-secondary dark:focus:border-primary text-sm rounded-sm focus:outline-none"
               ></textarea>
               <button
                 type="submit"

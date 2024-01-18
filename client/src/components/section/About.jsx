@@ -12,7 +12,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="sm:h-[90vh] flex items-center mb-20 pt-20 sm:pt-0 overflow-x-hidden"
+      className="sm:min-h-[90vh] flex items-center mb-20 pt-20 sm:pt-0 overflow-x-hidden"
     >
       <div>
         <Title labelOne={"About"} labelTwo={"Myself"} />

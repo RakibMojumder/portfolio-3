@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import Others from "./Others";
+import Others from "../components/others/Others";
 
 const OthersLayout = () => {
   return (

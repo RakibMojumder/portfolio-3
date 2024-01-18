@@ -12,9 +12,9 @@ const Resume = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative">
+    <div className="relative pb-16 sm:pb-0">
       <div className="w-full lg:w-3/4 mx-auto pt-10 pb-32 px-2 lg:px-0">
-        <div className="border border-slate-600 p-4">
+        <div className="border border-neutral-800 dark:border-purple-200/10 p-4">
           <ResumeHeader />
           <ResumeSkill />
           <ResumeProject />

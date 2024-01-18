@@ -2,7 +2,7 @@
 import { navItems } from "../../utils/data";
 import { useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
-import { AiFillFileImage } from "react-icons/ai";
+import { AiFillFileImage, AiOutlineLogin } from "react-icons/ai";
 import { FaFileSignature } from "react-icons/fa";
 import SectionItem from "./SectionItem";
 import Profile from "./Profile";
@@ -61,6 +61,7 @@ const Sidebar = ({ containerRef }) => {
             icon={AiFillFileImage}
           />
           <NavItem href="/others/blog" label="Blog" icon={FaFileSignature} />
+          <NavItem href="/others/login" label="Login" icon={AiOutlineLogin} />
         </ul>
       </div>
       <div className="mt-10">

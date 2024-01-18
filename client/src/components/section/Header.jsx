@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <section
       id="home"
-      className="sm:h-[90vh] flex justify-center items-center p-4 pt-20 sm:pt-0"
+      className="sm:min-h-[90vh] flex justify-center items-center p-4 pt-20 sm:pt-0"
     >
       <div>
         <div className="text-white text-center space-y-3">

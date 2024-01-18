@@ -1,19 +1,18 @@
 import { useRef } from "react";
-import About from "../section/About";
-import Header from "../section/Header";
-import Sidebar from "./Sidebar";
+import About from "./About";
+import Header from "./Header";
+import Sidebar from "../others/Sidebar";
 import { useScroll } from "framer-motion";
 import { useTransform } from "framer-motion";
-import Skills from "../section/Skill";
-import Projects from "../section/Projects";
-import Services from "../section/Services";
-import Contact from "../section/Contact";
-import Footer from "./Footer";
-import MobileServices from "../section/MobileServices";
-import MobileNav from "./MobileNav";
+import Skills from "./Skill";
+import Projects from "./Projects";
+import Services from "./Services";
+import Contact from "./Contact";
+import Footer from "../others/Footer";
+import MobileSectionNav from "../others/MobileSectionNav";
 import { useState } from "react";
 import { useEffect } from "react";
-import ScrollIndicate from "./ScrollIndicate";
+import ScrollIndicate from "../others/ScrollIndicate";
 
 const Home = () => {
   const targetRef = useRef();
@@ -43,7 +42,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="sm:flex h-full">
+    <div className="sm:flex h-full pb-16 sm:pb-0">
       <Sidebar containerRef={containerRef} />
 
       <div
@@ -52,7 +51,7 @@ const Home = () => {
         className="2xl:mx-auto overflow-y-auto purple-scroll"
       >
         {showIndicate && <ScrollIndicate className={"bottom-20"} />}
-        <MobileNav />
+        <MobileSectionNav />
         <Header />
         <About />
         <Projects />
@@ -62,7 +61,6 @@ const Home = () => {
           rotateZ={rotateZ}
           skewY={skewY}
         />
-        <MobileServices />
         <Services />
         <Contact />
         <Footer />

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@400;500;700;900&display=swap&family=Playpen+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@400;500;700;900&display=swap&family=Playpen+Sans:wght@400;800&display=swap');
 
 
 @tailwind base;
@@ -29,6 +29,15 @@
     .purple-scroll {
         -ms-overflow-style: none;
         scrollbar-width: none;
+    }
+
+    .tab-scroll::-webkit-scrollbar {
+        display: none;
+        background: transparent;
+    }
+
+    .tab-scroll {
+        -ms-overflow-style: none;
     }
 
     /* .purple-scroll::-webkit-scrollbar-thumb {

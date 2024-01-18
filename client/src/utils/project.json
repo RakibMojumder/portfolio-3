@@ -44,7 +44,7 @@
     ],
     "description": "A course & quiz related MERN stack project",
     "technology": [
-      "React",
+      "React JS",
       "Tailwind CSS",
       "Express JS",
       "MongoDB",
@@ -76,7 +76,7 @@
     ],
     "description": "Used laptop buy and sale related E-commerce website",
     "technology": [
-      "React",
+      "React JS",
       "Tailwind CSS",
       "Express JS",
       "MongoDB",
@@ -108,7 +108,7 @@
     ],
     "description": "Law & tax related services website",
     "technology": [
-      "React",
+      "React JS",
       "Tailwind CSS",
       "Express JS",
       "MongoDB",
@@ -139,7 +139,7 @@
     ],
     "description": "A course website where a user can find subject wise multiple courses and enroll in the courses",
     "technology": [
-      "React",
+      "React JS",
       "Tailwind CSS",
       "Express JS",
       "MongoDB",
@@ -169,7 +169,7 @@
     ],
     "description": "A quiz site to justify yourself what you have learned about your favorite programming languages",
     "technology": [
-      "React JS JS",
+      "React JS",
       "Tailwind CSS",
       "Recharts",
       "Daisy UI",
@@ -187,6 +187,21 @@
   },
   {
     "projectNo": 7,
+    "name": "Daily News",
+    "image": [
+      "https://i.ibb.co/sgh59dz/image-1.png",
+      "https://i.ibb.co/gyG0t5s/image-2.png",
+      "https://i.ibb.co/KXswYXs/image-3.png"
+    ],
+    "description": "This is news portal website where user can found news of everyday",
+    "technology": ["JavaScript", "Tailwind CSS"],
+    "link": {
+      "liveLink": "https://stirring-lolly-6e64da.netlify.app",
+      "githubClient": "https://github.com/RakibMojumder/news-portal"
+    }
+  },
+  {
+    "projectNo": 8,
     "name": "My Portfolio",
     "image": [
       "https://i.ibb.co/XxfFxzq/image-1.png",

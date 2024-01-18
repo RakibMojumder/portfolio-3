@@ -1,5 +1,5 @@
 import { BiHomeSmile } from "react-icons/bi";
-import { AiFillFileImage } from "react-icons/ai";
+import { AiFillFileImage, AiOutlineLogin } from "react-icons/ai";
 import { FaFileSignature } from "react-icons/fa";
 import ThemeSwitcher from "./ThemeSwitcher";
 import Profile from "./Profile";
@@ -21,6 +21,7 @@ const Others = () => {
             icon={AiFillFileImage}
           />
           <NavItem href="/others/blog" label="Blog" icon={FaFileSignature} />
+          <NavItem href="/others/login" label="Login" icon={AiOutlineLogin} />
         </ul>
       </div>
 

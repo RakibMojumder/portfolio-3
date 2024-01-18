@@ -13,15 +13,7 @@ const Project = ({ project }) => {
   };
 
   return (
-    <motion.div
-      initial={{ y: 100, opacity: 0.2 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{
-        delay: 0.06,
-        duration: 1.5,
-      }}
-    >
+    <motion.div layout initial={{ opacity: 0.2 }} animate={{ opacity: 1 }}>
       <Image src={project.image[0]} height={208} />
       <div className="mt-3">
         <h3 className="text-neutral-50 font-medium">{project.name}</h3>

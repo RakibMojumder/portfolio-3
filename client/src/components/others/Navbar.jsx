@@ -78,12 +78,6 @@ const Navbar = ({ handleOpen }) => {
         >
           Contact
         </HashLink>
-        <Link to="others/resume" className="w-full py-1.5 pl-4">
-          Resume
-        </Link>
-        <Link to="others/blog" className="w-full py-1.5 pl-4">
-          Blog
-        </Link>
         <ThemeSwitcher className={"pt-3 border-b pl-4"} />
       </div>
     </motion.div>

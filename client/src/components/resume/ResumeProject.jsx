@@ -11,7 +11,7 @@ const ResumeProject = () => {
         {projects.map((project) => (
           <li
             key={project.id}
-            className="text-neutral-300 text-sm py-4 border-b border-slate-700 first-of-type:pt-0 last-of-type:border-none last-of-type:pb-0"
+            className="text-neutral-300 text-sm py-4 border-b border-neutral-800 dark:border-slate-700 first-of-type:pt-0 last-of-type:border-none last-of-type:pb-0"
           >
             {/* TITLE */}
             <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
